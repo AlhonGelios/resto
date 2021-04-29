@@ -1,5 +1,6 @@
 .menu {
     &__item {
+        position: relative;
         width: 350px;
         min-height: 400px;
         background-color: #fff;
@@ -14,12 +15,21 @@
         margin-bottom: 20px;
         text-align: center;
     }
+    &__icon {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 15px;
+        top: 10px;
+        z-index: 10;
+    }
     &__img {
         width: calc(100% + 40px);
         transform: translateX(-20px);
         height: 240px;
         object-fit: cover;
         margin-bottom: 20px;
+        z-index: 9;
     }
     &__category, &__price {
         font-size: 18px;
